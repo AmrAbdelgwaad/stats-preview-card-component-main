@@ -12,7 +12,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 ### Live Site URL:
 
 
-- [click here](https://your-live-site-url.com)
+- [click here](https://amrabdelgwaad.github.io/stats-preview-card-component-main/)
 
 
 
