@@ -92,22 +92,20 @@ body {
 }
 
 .card {
-  max-width: 340px;
+  max-width: 327px;
   background-color: var(--card-bg-clr);
   border-radius: 0.5rem;
 }
 
-.card-picture {
-  background: url("image-header-mobile.jpg") no-repeat;
-  background-size: cover;
-  height: 250px;
+.image-container {
+  background-color: var(--accent-clr);
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.overlay {
-  height: inherit;
-  background-color: hsl(277, 64%, 61%);
+img {
   mix-blend-mode: multiply;
+  opacity: 0.75;
+
 }
 
 h1,
@@ -120,7 +118,8 @@ h1 {
   color: var(--white-clr);
   font-family: var(--ff-inter);
   margin: 2.5rem 1rem 1rem;
-  font-size: 1.6rem;
+  font-size: 1.75rem;
+  font-weight: 700;
 }
 
 span {
@@ -129,9 +128,10 @@ span {
 
 p {
   color: var(--main-p-clr);
-  font-family: var(--ff-lexend-deca);
-  word-spacing: 0.1rem;
+  font-family: var(--ff-inter);
   margin: 0 2rem 1rem;
+  font-size: 0.9375rem;
+ line-height: 1.6;
 }
 
 li {
@@ -139,45 +139,47 @@ li {
   font-family: var(--ff-lexend-deca);
   margin-top: 2rem;
   margin-bottom: 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.0625rem;
   text-transform: uppercase;
 }
 
 .white {
   color: var(--white-clr);
-  font-family: var(--ff-lexend-deca);
-  font-weight: bold;
+  font-family: var(--ff-inter);
   font-size: 1.5rem;
+  font-weight: 700;
   display: block;
 }
 
-@media (min-width: 56rem) {
+@media (min-width: 75rem) {
   .card {
-    min-width: 850px;
-    min-height: 375px;
+    max-width: 1080px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "content image";
   }
-  .card-picture {
-    background: url("image-header-desktop.jpg") no-repeat;
-    height: 395px;
-    background-size: cover;
-    border-radius: 0 0.5rem 0.5rem 0;
-    grid-area: image;
+ .image-container{
+   border-radius: 0 0.5rem 0.5rem 0;
+   grid-area: image;
   }
+
   .card-content {
     grid-area: content;
   }
 
   h1 {
     text-align: left;
-    margin: 2.5rem 3rem 0 3rem;
-    font-size: 1.9rem;
+    margin: 0;
+    padding: 5rem 5rem 2rem 4rem;
+    font-size: 2.25rem;
+    line-height: 1.2;
   }
 
   p {
     text-align: left;
-    margin: 1.5rem 3rem 0 3rem;
+    margin: 0;
+    padding: 0 6rem 0 4rem;
   }
 
   .white {
@@ -187,13 +189,13 @@ li {
   li {
     text-align: left;
     color: var(--main-p-clr);
-    margin-top: 1rem;
-    margin-bottom: 2.5rem;
+    margin: 0;
   }
 
   .flex-group {
     display: flex;
-    margin: 2rem 0 0 3rem;
-    gap: 3rem;
+    margin: 0;
+    padding: 4rem 0 0 4rem;
+    gap: 4rem;
   }
 }
