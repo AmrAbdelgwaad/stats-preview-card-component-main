@@ -105,7 +105,6 @@ body {
 img {
   mix-blend-mode: multiply;
   opacity: 0.75;
-
 }
 
 h1,
@@ -131,7 +130,7 @@ p {
   font-family: var(--ff-inter);
   margin: 0 2rem 1rem;
   font-size: 0.9375rem;
- line-height: 1.6;
+  line-height: 1.6;
 }
 
 li {
@@ -159,9 +158,9 @@ li {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "content image";
   }
- .image-container{
-   border-radius: 0 0.5rem 0.5rem 0;
-   grid-area: image;
+  .image-container {
+    border-radius: 0 0.5rem 0.5rem 0;
+    grid-area: image;
   }
 
   .card-content {
